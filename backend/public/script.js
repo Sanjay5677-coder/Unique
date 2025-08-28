@@ -1,7 +1,7 @@
 async function startPayment() {
   try {
     // Backend se order create karo
-    const res = await fetch("http://localhost:5000/create-order", {
+    const res = await fetch("https://unique-1.onrender.com/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: 70 })
